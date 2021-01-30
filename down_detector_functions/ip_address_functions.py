@@ -8,8 +8,9 @@ def user_ip_address():
     user_ip = socket.gethostbyname(socket.gethostname())
     return user_ip
 
+
 '''
-**Function will take any IP Address and ping it to see if we can get a response
+**Function will take any IP4 Address and ping it to see if we can get a response
 **Returns True if IP Address is active, False if there is no response
 '''
 def ping_ip(ip_address):
