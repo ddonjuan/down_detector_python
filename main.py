@@ -1,7 +1,8 @@
 from down_detector_functions.ip_address_functions import user_ip_address, ping_ip
+import time
 
 
-#Test whether user's IP Address is active
+#Test whether user's IP4 Address is active
 def test_ip_ping():
     user_ip = user_ip_address()
     ping_response = ping_ip(user_ip)
@@ -14,6 +15,9 @@ def test_ip_ping():
 #function that executes the program
 def run_down_detector():
     print("Program running....")
+    #Timer that will run the function for x amount of time
+    time.sleep(5)
+    print("running test_ip_ping function")
     test_ip_ping()
 
 
